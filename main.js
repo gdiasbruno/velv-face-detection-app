@@ -46,8 +46,7 @@ const loadDetector = async () => {
   const model = faceDetection.SupportedModels.MediaPipeFaceDetector;
   const detectorConfig = {
     runtime: 'mediapipe',
-    solutionPath: 'https://cdn.jsdelivr.net/npm/@mediapipe/face_detection',
-                  // or 'base/node_modules/@mediapipe/face_detection' in npm.
+    solutionPath: '/node_modules/@mediapipe/face_detection',
   };
   detector = await faceDetection.createDetector(model, detectorConfig);
 };
